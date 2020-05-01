@@ -470,7 +470,7 @@ section.portfolio  .swiper-button-prev,
 section.portfolio  .swiper-button-next{
     left: 35px;
     right: auto;
-    top: 58%;
+    top: 50%;
     height: 64px;
     width: 64px;
     background-color: white;
