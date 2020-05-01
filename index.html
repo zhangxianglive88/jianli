@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>张翔的个人简历</title>
-    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="//unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./a.css">
     <script src="//at.alicdn.com/t/font_1739083_lt1m6snu7q.js"></script>
@@ -157,21 +156,18 @@
 
     <section data-x id="siteWorks" class="portfolio">
       <h2>作品集</h2>
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <img class="swiper-slide" src="./img/works/navigation.png">
-            <img class="swiper-slide" src="./img/works/canvas.jpg">
-            <img class="swiper-slide" src="./img/works/apple.png">
+      <div id="mySlides">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <img class="swiper-slide" src="./img/works/navigation.png">
+              <img class="swiper-slide" src="./img/works/canvas.jpg">
+              <img class="swiper-slide" src="./img/works/apple.png">
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </section>
 
     <script src="//unpkg.com/swiper/js/swiper.min.js"></script>

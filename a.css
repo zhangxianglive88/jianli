@@ -446,7 +446,7 @@ section.portfolio{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    position: relative;
+    text-align: center;
 }
 
 section.portfolio > h2{
@@ -458,16 +458,16 @@ section.portfolio > h2{
     padding: 20px 0 32px 0;
 }
 
-section.portfolio{
-    text-align: center;
+section.portfolio > #mySlides{
+    position: relative;
 }
 
 section.portfolio .swiper-container {
     width: 680px;
     height: 570px;
 }
-section.portfolio > .swiper-button-prev,
-section.portfolio > .swiper-button-next{
+section.portfolio  .swiper-button-prev,
+section.portfolio  .swiper-button-next{
     left: 35px;
     right: auto;
     top: 58%;
@@ -477,7 +477,7 @@ section.portfolio > .swiper-button-next{
     border-radius: 50%;
 }
 
-section.portfolio > .swiper-button-next{
+section.portfolio  .swiper-button-next{
     left: auto;
     right: 35px;
 }
