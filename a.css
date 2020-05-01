@@ -445,6 +445,7 @@ section.portfolio{
     width: 930px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 section.portfolio > h2{
@@ -456,88 +457,26 @@ section.portfolio > h2{
     padding: 20px 0 32px 0;
 }
 
-
 section.portfolio{
     text-align: center;
 }
-section.portfolio > nav{
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
+
+section.portfolio .swiper-container {
+    width: 680px;
+    height: 570px;
+}
+section.portfolio > .swiper-button-prev,
+section.portfolio > .swiper-button-next{
+    left: 35px;
+    right: auto;
+    top: 58%;
+    height: 64px;
+    width: 64px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-section.portfolio > nav > ol{
-    /* inner-block和top配合使用，垂直对齐
-        display: inline-block;
-        vertical-align: top;
-    */
-    display: inline-block;
-    vertical-align: top;
-    /* margin: 0px auto; 使用这行代码需要定义宽度*/
+section.portfolio > .swiper-button-next{
+    left: auto;
+    right: 35px;
 }
-
-section.portfolio > nav > ol > li{
-    float: left;
-    margin-left: 30px;
-    cursor: pointer; /* 点击字体的时候显示是一个手指，而不是I */
-}
-
-section.portfolio > nav > ol > li:first-child{
-    margin-left: 0px;
-}
-
-section.portfolio > nav .bar{
-    margin-top: 15px;
-    border-radius: 5px;
-    background: rgb(255, 255, 255);
-}
-
-section.portfolio > nav > .bar.state1 > .bar-inner{
-    width: 22%;
-    border-radius: 5px;
-    background: rgb(232, 103, 107);
-    height: 5px;
-}
-
-section.portfolio > nav > .bar.state2 > .bar-inner{
-    margin-left: 50px;
-    width: 29%;
-    border-radius: 5px;
-    background: rgb(232, 103, 107);
-    height: 5px;
-}
-
-section.portfolio > nav > .bar.state3 > .bar-inner{
-    margin-left: 122px;
-    width: 44%;
-    border-radius: 5px;
-    background: rgb(232, 103, 107);
-    height: 5px;
-}
-
-section.portfolio > .works{
-    position: relative;
-    height: 590px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-section.portfolio > .works > .big{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-section.portfolio > .works > .small1{
-    position: absolute;
-    left: 636px;
-    top: 0;
-}
-
-section.portfolio > .works > .small2{
-    position: absolute;
-    left: 636px;
-    top: 297px;
-}
-
-

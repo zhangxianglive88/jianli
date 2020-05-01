@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>张翔的个人简历</title>
-    <link rel="stylesheet" href="./a.css">
     <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="//unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./a.css">
     <script src="//at.alicdn.com/t/font_1739083_lt1m6snu7q.js"></script>
     <script src="./tween.js"></script>
   </head>
@@ -57,6 +58,7 @@
     <div class="banner">
       <div class="mask"></div>
     </div>
+
     <main>
       <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
@@ -112,8 +114,8 @@
         方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。<br>
         技能：前端开发，Rails 开发，Node.js 开发
       </p>
-
     </main>
+
     <section data-x id="siteSkills" class="skills">
       <h2>技能</h2>
       <ol class="clearfix">
@@ -155,40 +157,42 @@
         </li>
       </ol>
     </section>
+
     <section data-x id="siteWorks" class="portfolio">
       <h2>作品集</h2>
-      <nav>
-        <ol class="clearfix">
-          <li id="portfolio1">所有</li>
-          <li id="portfolio2">框架</li>
-          <li id="portfolio3">原生JS&amp;CSS</li>
-        </ol>
-        <div id="portfolioBar" class="bar state1">
-          <div class="bar-inner"></div>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img class="swiper-slide" src="./img/works/navigation.png">
+            <img class="swiper-slide" src="./img/works/canvas.jpg">
+            <img class="swiper-slide" src="./img/works/apple.png">
         </div>
-      </nav>
-      <div class="works">
-        <div class="big">
-          <img src="./img/picture1.png" style="width:597px;" alt="作品1">
-        </div>
-        <div class="small1">
-          <img src="./img/picture2.png" style="width:293px;" alt="作品2">
-        </div>
-        <div class="small2">
-          <img src="./img/picture3.png" style="width:293px;" alt="作品3">
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </section>
+
+    <script src="//unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
-      portfolio1.onclick=function(){
-        portfolioBar.className = "bar state1"
-      }
-      portfolio2.onclick=function(){
-        portfolioBar.className = "bar state2"
-      }
-      portfolio3.onclick=function(){
-        portfolioBar.className = "bar state3"
-      }
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
     </script>
     <script>
       // // 设置三秒后再移除active
